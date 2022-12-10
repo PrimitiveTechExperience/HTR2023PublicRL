@@ -1,0 +1,13 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;!-- Specifies that the document type is html, and the language is english --&gt;
+
+&lt;!-- head is the... head of the html file. --&gt;
+&lt;head&gt;
+    &lt;!-- metadata, used the vscode tab methods to autogenerate this. From my understanding, 
+    charset is the regular hexadecimal system for recognizing characters and other things are keywords--&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Website Grabber&lt;/title&gt;
+&lt;/head&gt;

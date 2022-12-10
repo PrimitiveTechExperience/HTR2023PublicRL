@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Specifies that the document type is html, adn the language is english -->
+
 <head>
+    <!-- Some notes
+    - Container  is meant to contain the image, as there is animation 
+    - startup_img is essentially the id of the animated startup images.
+    - .center exists to center the images (currently not working lol.).
+    -->
+    <title>~~Retro Styled Project~~</title>
+    <!-- Title is this cause why not -->
+    <!-- No comments allowed within the css, since i don't remember how to do css comments.
+    vscode also doesn't knwo how to comment within the style area -->
+    <style>
+        img {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            padding-bottom: 35px;
+        }
+
+        body {
+            text-align: center;
+            color: azure;
+        }
+
+        #container {
+
+            width: 300px;
+            height: 400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        #startup_img {
+            width: 600px;
+            height: 1px;
+            position: absolute;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+    <!-- metadata, used the vscode tab methods to autogenerate this. From my understanding, 
+    charset is the regular hexadecimal system for recognizing characters and other things are keywords-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
-<body>
-    <h1>HELLO WORLD!</h1>
+
+<body style="background-color:black">
+    <!-- Loading some scripts -->
     <script src="index.js"> </script>
+    <script src="startup.js"></script>
+    <div>
+        <div id="container">
+            <img src="images/synth_sun.png" alt="sun png lmao" id="startup_img" class="center">
+        </div>
+        <script>
+            startup();
+        </script>
+        <h1>Welcome to Ryan's Website</h1>
+        <h2>Choose where you would like to be redirected:</p>
+            <a href="link1.html">Coder's learning Website</a>
+
+
+    </div>
+    <!-- <img src="images/synth_sun.png" alt="sun png lmao"> -->
+    <!-- <h1 style="color: azure">HELLO WORLD!</h1> -->
+
 </body>
+
 </html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Grabber</title>
+    <script src="buttons.js"></script>
+    <style>
+        body {
+            text-align: center;
+            color: azure;
+            margin-left: 160px;
+            /* Same as the width of the sidenav */
+            font-size: 28px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        pre {
+            word-wrap: break-word;
+            font-size: small;
+        }
+
+        .pwrap1 {
+            width: 75%;
+            height: auto;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .disbox {
+            width: 90%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid azure;
+            padding: 10px;
+        }
+
+        .sidebars {
+
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: grey;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidebar button {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #ffffff;
+            display: block;
+        }
+
+        .main {
+            margin-left: 160px;
+            /* Same as the width of the sidenav */
+            font-size: 28px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <h1>Retro Website Generator</h1>
+    <p class="pwrap1">The most infuriating things about most of the current website makers is simple: They don't offer
+        you an indepth
+        look at the code behind them!</p>
+    <p class="pwrap1">This website generator aims to help you create your own 2000s retro styled website and provides
+        you with an
+        indepth look at the behind the scenes code, so you can also understand what's going on</p>
+    <a href="index.html">Return to the main page.</a><br>
+    <div class="disbox">
+        <div class="sidebars">
+            <p><button type="button" style="font-size: larger;" value="DOCUMENT TITLE" onclick="changeTitle()">Change
+                    Title</button></p>
+            <p><button type="button" style="font-size: larger;" value="DOCUMENT TITLE" onclick="addParagraph()">Add
+                    Paragraph</button></p>
+        </div>
+
+        <div>
+            <form>
+                <pre style="font-size: small;">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="en"&gt;<br>
+                    <i>&lt;!-- Specifies that the document type is html, and the language is english --&gt;<br><br>
+
+                    &lt;!-- head is the... head of the html file. --&gt;</i><br>
+                    &lt;head&gt;<br>
+                    <i>&lt;!-- metadata, used the vscode tab methods to autogenerate this. From my understanding,
+                    charset is the regular hexadecimal system for recognizing characters and other things are
+                    keywords--&gt;</i><br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                    &lt;title&gt;
+                </pre>
+                <pre id="output"></pre>
+                <pre>
+                    &lt;/title&gt;<br>
+                    &lt;/head&gt;<br>
+                </pre>
+                <pre>
+                    &lt;body&gt;
+                </pre>
+                <pre id="mainBody"></pre>
+                <pre>
+                    &lt;\body&gt;
+                </pre>
+            </form>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
