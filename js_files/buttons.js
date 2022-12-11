@@ -39,6 +39,19 @@ function addHeading() {
     displays();
 }
 
+function addImage() {
+    // Simply takes in the input of the user for a header.
+    // Pretty much the same as the paragraph section.
+    var source = prompt("What image would you like to insert? (Must be a link to an image!)");
+    var word = prompt("What would you like to display if the image fails to load?");
+    if (!a.includes("&lt;!-- To insert an image, simply use the img-tags! --&gt;\n")) {
+        a += "&lt;!-- To insert an image, simply use the img-tags! --&gt;\n";
+        a += "&lt;!-- use the src=(link) to insert the image, and alt=(something) to display a word is the image fails to load --&gt;\n";
+    }
+    a += '&lt;img src="' + source + '" alt="' + word + '"&gt;\n';
+    displays();
+}
+
 function fileToText(file, callback) {
     const reader = new FileReader();
     reader.readAsText(file);
