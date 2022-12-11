@@ -6,8 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Grabber</title>
+    <!-- loads all scripts related to the button -->
     <script src="buttons.js"></script>
+
     <style>
+        /*
+        body essentially controls everything.
+        By setting the color of body to white, it makes all text white.
+        pre also has small font size since it's too large
+        */
+
         body {
             text-align: center;
             color: azure;
@@ -41,7 +49,9 @@
         }
 
         .sidebars {
-
+            /*
+            setting the height to 100% covers the entire webpage.
+            */
             height: 100%;
             width: 160px;
             position: fixed;
@@ -72,6 +82,7 @@
 </head>
 
 <body style="background-color: black;">
+    <!-- This section of code covers essentially covers the relatively basic text on the screen. -->
     <h1>Retro Website Generator</h1>
     <p class="pwrap1">The most infuriating things about most of the current website makers is simple: They don't offer
         you an indepth
@@ -79,15 +90,21 @@
     <p class="pwrap1">This website generator aims to help you create your own 2000s retro styled website and provides
         you with an
         indepth look at the behind the scenes code, so you can also understand what's going on</p>
+    <!-- This section of code simply goes back to the starting page -->
     <a href="index.html">Return to the main page.</a><br>
+    <!-- This is the sidebox that allows you to edit the "main page" of HTML code. -->
     <div class="disbox">
         <div class="sidebars">
+            <!-- This is the buttons. Document title is the original value since i was too lazy to change it. -->
             <p><button type="button" style="font-size: larger;" value="DOCUMENT TITLE" onclick="changeTitle()">Change
                     Title</button></p>
             <p><button type="button" style="font-size: larger;" value="DOCUMENT TITLE" onclick="addParagraph()">Add
                     Paragraph</button></p>
+            <p><button type="button" style="font-size: larger;" value="DOCUMENT TITLE" onclick="addHeading()">Add
+                    Heading</button></p>
         </div>
-
+        <!-- This section covers all of the more complex thinngs that happens in the frontend. -->
+        <!-- The first section is all hardcoded, since it will always be the same thing. -->
         <div>
             <form>
                 <pre style="font-size: small;">
@@ -99,20 +116,23 @@
                     &lt;head&gt;<br>
                     <i>&lt;!-- metadata, used the vscode tab methods to autogenerate this. From my understanding,
                     charset is the regular hexadecimal system for recognizing characters and other things are
-                    keywords--&gt;</i><br>
+                    keywords. Title simply specifies the title of the website (the name of the tab)--&gt;</i><br>
                     &lt;meta charset="UTF-8"&gt;<br>
                     &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br>
                     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
                     &lt;title&gt;
                 </pre>
+                <!-- The id known as output is the title. -->
                 <pre id="output"></pre>
                 <pre>
                     &lt;/title&gt;<br>
                     &lt;/head&gt;<br>
                 </pre>
                 <pre>
+                    <i>&lt;!-- Body is simply the largest portion of the website, it consists the main body of your website!--&gt;</i><br>
                     &lt;body&gt;
                 </pre>
+                <!-- The mainBody is essentially a variable. it contains all of the text parsing things. -->
                 <pre id="mainBody"></pre>
                 <pre>
                     &lt;\body&gt;

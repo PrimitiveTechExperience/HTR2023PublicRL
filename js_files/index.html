@@ -13,6 +13,12 @@
     <!-- No comments allowed within the css, since i don't remember how to do css comments.
     vscode also doesn't knwo how to comment within the style area -->
     <style>
+        /*
+        margin-right and margin left are set to auto,
+        such that the spacing makes the text and many other things are centered
+        color is set to azure since the background is black
+        container functions as stated above.
+        */
         img {
             display: block;
             margin-right: auto;
@@ -59,19 +65,24 @@
     <!-- Loading some scripts -->
     <script src="index.js"> </script>
     <script src="startup.js"></script>
+    <!-- div used here in order to prevent text going above the image. -->
     <div>
+        <!-- container is used here in order to create the synthwave sun's animation -->
         <div id="container">
             <img src="images/synth_sun.png" alt="sun png lmao" id="startup_img" class="center">
         </div>
+        <!-- startup is the script that animates the sun -->
         <script>
             startup();
         </script>
+        <!-- simple hyperlink into the other files -->
         <h1>Welcome to Ryan's Website</h1>
         <h2>Choose where you would like to be redirected:</p>
             <a href="link1.html">Coder's learning Website</a>
 
 
     </div>
+    <!-- tests -->
     <!-- <img src="images/synth_sun.png" alt="sun png lmao"> -->
     <!-- <h1 style="color: azure">HELLO WORLD!</h1> -->
 

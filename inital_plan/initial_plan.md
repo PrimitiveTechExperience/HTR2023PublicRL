@@ -18,4 +18,5 @@ Main plan:
 - Have a "on-start up" effect, such as a retro pacman opening or some sort of 80s "Synthwave" style esque thing
     - Check if synthwave is "retro" enough.
 - To counter the "Uniqueness problem" while making an app that can have some real life applications,
-    use a combination of a website grabber
+    use a combination of a website generator + retro feeling.
+    - website itself could carry a 2000s website feeling
